@@ -7,7 +7,7 @@ you have to define a [promise library](http://mongoosejs.com/docs/promises.html)
 in your mongoose installation, like:
 
 * [bluebird](https://www.npmjs.com/package/bluebird)
-* [mpromise](hhttps://www.npmjs.com/package/mpromise)
+* [mpromise](https://www.npmjs.com/package/mpromise)
 * [q.Promise](https://www.npmjs.com/package/q)
 * [ES6 Native Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
