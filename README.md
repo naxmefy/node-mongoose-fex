@@ -1,7 +1,13 @@
 # node-mongoose-fex
 added several methods the mongoose schema to find, update or create documents. fex = find extensions
 
+[![npm (scoped)](https://img.shields.io/npm/v/@naxmefy/mongoose-fex.svg)](https://www.npmjs.com/package/@naxmefy/mongoose-fex)
+![node version](https://img.shields.io/badge/node-%3E%3D4.x-blue.svg)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/naxmefy/node-mongoose-fex/blob/master/LICENSE)
+
 [![Build Status](https://travis-ci.org/naxmefy/node-mongoose-fex.svg?branch=master)](https://travis-ci.org/naxmefy/node-mongoose-fex)
+[![Dependency Status](https://gemnasium.com/badges/github.com/naxmefy/node-mongoose-fex.svg)](https://gemnasium.com/github.com/naxmefy/node-mongoose-fex)
+
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7124f67decbb4370bbc53f07f234c3be)](https://www.codacy.com/app/naxmefy/node-mongoose-fex)
 [![Codacy Badge](https://api.codacy.com/project/badge/coverage/7124f67decbb4370bbc53f07f234c3be)](https://www.codacy.com/app/naxmefy/node-mongoose-fex)
