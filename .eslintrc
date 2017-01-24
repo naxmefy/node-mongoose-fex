@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "standard"
+  ],
+  "plugins": [
+    "promise"
+  ],
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "db2" : false,
+    "oracle" : false
+  },
+  "rules": {
+    "max-len": [
+      2,
+      120,
+      2
+    ],
+    "generator-star-spacing": 0
+  }
+}

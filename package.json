@@ -1,0 +1,41 @@
+{
+  "name": "@naxmefy/mongoose-fex",
+  "version": "0.0.0",
+  "description": "added several methods the mongoose schema to find, update or create documents. fex = find extensions",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint app test",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha test",
+    "test:coverage": "istanbul cover _mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naxmefy/node-mongoose-fex.git"
+  },
+  "author": "MRW Neundorf <m.neundorf@live.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naxmefy/node-mongoose-fex/issues"
+  },
+  "homepage": "https://github.com/naxmefy/node-mongoose-fex#readme",
+  "dependencies": {
+    "async": "^2.1.4",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.capitalize": "^4.2.1",
+    "lodash.foreach": "^4.5.0",
+    "lodash.isarray": "^4.0.0",
+    "lodash.omit": "^4.5.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.7",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mongoose": "^4.7.8",
+    "should": "^11.1.2"
+  }
+}
