@@ -43,32 +43,41 @@ module.exports = function (schema) {
     }
   })
 
-  schema.statics.findOrCreate = function (search, items, cb) {
+  schema.statics.findOneOrCreate = function (search, item, callback) {
+    return this.findOne(search)
+      .then(function (doc) {
+        if (doc) {
+          if (callback) callback(null, doc)
+          return doc
+        }
+
+        doc = new this(item)
+        return doc.save(callback)
+      })
+      .catch(function (err) {
+        if (callback) callback(err)
+        return err
+      })
+  }
+
+  schema.statics.findByOrCreate = function (by, items, callback) {
     var model = this
     return new model.base.Promise(function (respond, reject) {
       async.eachSeries(items, function (item, next) {
-        return model.findOneOrCreate(search, item, next)
+        return model.findOneByOrCreate(by, item, next)
       }, function (err, results) {
-        if (err) return reject(err)
+        if (err) {
+          if (callback) callback(err)
+          return reject(err)
+        }
+
+        if (callback) callback(null, results)
         return respond(results)
       })
     })
   }
 
-  schema.statics.findOneOrCreate = function (search, data, cb) {
-    return this.findOne(search)
-      .then(function (doc) {
-        if (doc) {
-          if (cb) cb(null, doc)
-          return doc
-        }
-
-        doc = new this(data)
-        return doc.save(cb)
-      })
-      .catch(function (err) {
-        if (cb) cb(err)
-        return err
-      })
+  schema.statics.findOneByOrCreate = function (by, item, callback) {
+    return this.findOneByOrCreate({[by]: item[by]}, callback)
   }
 }
