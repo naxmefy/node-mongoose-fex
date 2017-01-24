@@ -1,5 +1,4 @@
 var async = require('async')
-var isArray = require('lodash.isarray')
 var omit = require('lodash.omit')
 var forEach = require('lodash.foreach')
 var capitalize = require('lodash.capitalize')
