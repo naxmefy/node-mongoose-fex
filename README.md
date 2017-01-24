@@ -29,7 +29,7 @@ $ npm install --save @naxmefy/mongoose-fex
 **Global**
 ```JavaScript
 const mongoose = require('mongoose')
-const mongooseFex = require('mongooseFex')
+const mongooseFex = require('@naxmefy/mongoose-fex')
 
 mongoose.plugin(mongooseFex)
 ```
@@ -37,7 +37,7 @@ mongoose.plugin(mongooseFex)
 **Per Schema**
 ```JavaScript
 const mongoose = require('mongoose')
-const mongooseFex = require('mongooseFex')
+const mongooseFex = require('@naxmefy/mongoose-fex')
 
 const schema = new mongoose.Schema({})
 schema.plugin(mongooseFex)
