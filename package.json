@@ -1,6 +1,6 @@
 {
   "name": "@naxmefy/mongoose-fex",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "added several methods the mongoose schema to find, update or create documents. fex = find extensions",
   "main": "index.js",
   "scripts": {
