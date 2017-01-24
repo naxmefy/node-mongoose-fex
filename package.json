@@ -9,6 +9,9 @@
     "test": "mocha test",
     "test:coverage": "istanbul cover _mocha test"
   },
+  "engines": {
+    "node": ">=4.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/naxmefy/node-mongoose-fex.git"
